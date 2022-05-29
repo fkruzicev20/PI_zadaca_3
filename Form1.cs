@@ -45,7 +45,7 @@ namespace PI_zadaca_3
             }
         }
 
-        private void InitializeComponent()
+        private void logForma()
         {
             this.SuspendLayout();
             // 
