@@ -33,9 +33,9 @@ namespace PI_zadaca_3
             {
                 if (UsernameTxt.Text == username && PasswordTxt.Text == password )
                 {
-                    UnZah UnZah = new UnZah();
+                    Zahtjevi2 Zahtjevi = new Zahtjevi2();
                     Hide();
-                    UnZah.ShowDialog();
+                    Zahtjevi.ShowDialog();
                     Close();
                 }
                 else

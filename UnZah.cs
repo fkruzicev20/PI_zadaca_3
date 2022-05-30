@@ -78,6 +78,7 @@ namespace PI_zadaca_3
             this.button1.TabIndex = 0;
             this.button1.Text = "Prinesi zahtjev";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
@@ -144,41 +145,41 @@ namespace PI_zadaca_3
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(31, 106);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(122, 17);
+            this.label4.Size = new System.Drawing.Size(126, 17);
             this.label4.TabIndex = 8;
-            this.label4.Text = "Cijena sa PDV-om";
+            this.label4.Text = "Cijena sa PDV-om:";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(85, 50);
+            this.textBox2.Location = new System.Drawing.Point(151, 50);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(141, 22);
             this.textBox2.TabIndex = 9;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(85, 78);
+            this.textBox3.Location = new System.Drawing.Point(151, 78);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(141, 22);
             this.textBox3.TabIndex = 10;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(85, 106);
+            this.textBox4.Location = new System.Drawing.Point(151, 106);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(141, 22);
             this.textBox4.TabIndex = 11;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(85, 134);
+            this.textBox5.Location = new System.Drawing.Point(151, 134);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(141, 22);
             this.textBox5.TabIndex = 12;
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(222, 286);
+            this.richTextBox1.Location = new System.Drawing.Point(356, 286);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(100, 96);
             this.richTextBox1.TabIndex = 13;
@@ -222,23 +223,23 @@ namespace PI_zadaca_3
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(85, 286);
+            this.textBox6.Location = new System.Drawing.Point(151, 286);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 22);
+            this.textBox6.Size = new System.Drawing.Size(141, 22);
             this.textBox6.TabIndex = 18;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(85, 314);
+            this.textBox7.Location = new System.Drawing.Point(151, 314);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 22);
+            this.textBox7.Size = new System.Drawing.Size(141, 22);
             this.textBox7.TabIndex = 19;
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(85, 342);
+            this.textBox8.Location = new System.Drawing.Point(151, 342);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 22);
+            this.textBox8.Size = new System.Drawing.Size(141, 22);
             this.textBox8.TabIndex = 20;
             // 
             // textBox9
@@ -294,9 +295,14 @@ namespace PI_zadaca_3
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Name = "UnZah";
-            this.Text = "Zahtjev";
+            this.Text = "Podnošenje zahtjev";
             this.ResumeLayout(false);
             this.PerformLayout();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
 
         }
     }

@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="fkruzicev20_DBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fkruzicev20_DBDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +65,12 @@
     </Compile>
     <Compile Include="UnZah.Designer.cs">
       <DependentUpon>UnZah.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zahtjevi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zahtjevi.Designer.cs">
+      <DependentUpon>Zahtjevi.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -76,6 +87,20 @@
     <EmbeddedResource Include="UnZah.resx">
       <DependentUpon>UnZah.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Zahtjevi.resx">
+      <DependentUpon>Zahtjevi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="fkruzicev20_DBDataSet.xsc">
+      <DependentUpon>fkruzicev20_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="fkruzicev20_DBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>fkruzicev20_DBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="fkruzicev20_DBDataSet.xss">
+      <DependentUpon>fkruzicev20_DBDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
