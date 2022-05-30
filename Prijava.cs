@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace PI_zadaca_3
 {
-    public partial class Form1 : Form
+    public partial class Prijava : Form
     {
         string username="narucitelj";
         string password="test";
-        public Form1()
+        public Prijava()
         {
             InitializeComponent();
         }

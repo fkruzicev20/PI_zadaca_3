@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PI_zadaca_3.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,39 +8,44 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PI_zadaca_3.Rep;
 
 namespace PI_zadaca_3
 {
     public partial class Zahtjevi2 : Form
     {
-        private DataGridView dataGridView1;
+        private DataGridView dgvZahtjevi;
         private Button button1;
         private Button button3;
         private Button button2;
+        
 
+       
+        
         public Zahtjevi2()
         {
             InitializeComponent();
-        }
 
+
+        }
         private void InitializeComponent()
         {
-
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvZahtjevi = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvZahtjevi)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvZahtjevi
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(426, 274);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvZahtjevi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvZahtjevi.Location = new System.Drawing.Point(12, 12);
+            this.dgvZahtjevi.Name = "dgvZahtjevi";
+            this.dgvZahtjevi.RowHeadersWidth = 51;
+            this.dgvZahtjevi.RowTemplate.Height = 24;
+            this.dgvZahtjevi.Size = new System.Drawing.Size(426, 274);
+            this.dgvZahtjevi.TabIndex = 0;
             // 
             // button1
             // 
@@ -69,26 +75,35 @@ namespace PI_zadaca_3
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // Zahtjevi
+            // Zahtjevi2
             // 
             this.ClientSize = new System.Drawing.Size(450, 338);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
-            this.Name = "Zahtjevi";
+            this.Controls.Add(this.dgvZahtjevi);
+            this.Name = "Zahtjevi2";
             this.Text = "Zahtjevi";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Zahtjevi2_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvZahtjevi)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-             UnZah UnZah = new UnZah();
-                    Hide();
-                    UnZah.ShowDialog();
-                    Close();
+             
+        }
+         private void RefreshDGV()
+        {
+            dgvZahtjevi.DataSource=null;
+            dgvZahtjevi.DataSource=ZahtjevRep.DohvatiZahtjev();
+
+        }
+
+        private void Zahtjevi2_Load(object sender, EventArgs e)
+        {
+            RefreshDGV();
         }
     }
 }

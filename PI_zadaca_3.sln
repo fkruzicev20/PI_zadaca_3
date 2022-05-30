@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32519.111
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PI_zadaca_3", "PI_zadaca_3.csproj", "{5C8B0086-EF61-4151-A252-043A1EE69DDE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBLayer", "..\DBLayer\DBLayer.csproj", "{71B5A1A3-FB25-4C7B-BF21-E9D2249146BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5C8B0086-EF61-4151-A252-043A1EE69DDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C8B0086-EF61-4151-A252-043A1EE69DDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C8B0086-EF61-4151-A252-043A1EE69DDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71B5A1A3-FB25-4C7B-BF21-E9D2249146BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71B5A1A3-FB25-4C7B-BF21-E9D2249146BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71B5A1A3-FB25-4C7B-BF21-E9D2249146BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71B5A1A3-FB25-4C7B-BF21-E9D2249146BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
