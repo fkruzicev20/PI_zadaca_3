@@ -92,7 +92,12 @@ namespace PI_zadaca_3
 
         private void button3_Click(object sender, EventArgs e)
         {
-             
+            Zahtjev selectedZahtjev = dgvZahtjevi.CurrentRow.DataBoundItem as Zahtjev;
+            if (selectedZahtjev != null)
+            {
+                //UnZah unZah = new UnZah(selectedZahtjev);
+                //unZah.ShowDialog();
+            }
         }
          private void RefreshDGV()
         {
